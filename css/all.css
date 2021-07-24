@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*variable*/
+/*init*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+h2.blue {
+  color: #1736DC;
+}
+h2.pink {
+  color: #FB56BF;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 1025px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 1025px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(https://raw.githubusercontent.com/wei-ling-chan/hexschool-resume/main/assets/img-headerShape.png);
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.header .headerPhoto {
+  width: 286px;
+  margin-right: 40px;
+  text-align: center;
+  margin-top: 110px;
+}
+.header .headerPhoto p {
+  margin-bottom: 5px;
+}
+.header .contact {
+  width: 739px;
+  margin-top: 125px;
+  font-size: 24px;
+}
+.header .contact li {
+  margin-bottom: 20px;
+}
+.header .contact a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.header .contact a:hover {
+  color: red;
+}
+.header .contact img {
+  font-size: 42px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.footer {
+  width: 1025px;
+  height: 87px;
+  text-align: center;
+  line-height: 87px;
+  background-image: url(https://raw.githubusercontent.com/wei-ling-chan/hexschool-resume/main/assets/img-Looper-bg.png);
+}
+
+.modern {
+  margin-bottom: 50px;
+}
+.modern .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modern .modernItem {
+  border-radius: 6px;
+  border: 1px solid #FFFFFF;
+  width: 284px;
+  height: 276px;
+  margin-left: 8.5px;
+  margin-right: 8.5px;
+  text-align: center;
+}
+.modern .modernItem img {
+  margin-top: 33px;
+  margin-bottom: 23px;
+}
+.modern .modernItem.one {
+  border-bottom: 6px solid #F58D23;
+}
+.modern .modernItem.tow {
+  border-bottom: 6px solid #539E43;
+}
+.modern .modernItem.three {
+  border-bottom: 6px solid #6762A6;
+}
+.modern .modernItem li {
+  text-align: left;
+  margin-bottom: 6px;
+  margin-left: 32px;
+  font-size: 10px;
+}
+.modern .modernItem li::before {
+  content: "·";
+  margin-right: 15px;
+}
+
+.experience {
+  margin-bottom: 50px;
+}
+.experience .timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.experience .timeline .item {
+  padding: 10px;
+  border: 1px solid #FB56BF;
+  border-radius: 4px;
+  width: 260px;
+  height: 136px;
+}
+.experience .timeline .infoLeft {
+  position: relative;
+}
+.experience .timeline .infoLeft .item {
+  position: absolute;
+  top: 228px;
+  right: 28px;
+}
+.experience .timeline .mid {
+  width: 2px;
+  height: 542px;
+  position: relative;
+  border: 1px solid #D8D8D8;
+  border-bottom-width: 46pxs;
+  background-color: #D8D8D8;
+  position: relative;
+}
+.experience .timeline .mid img {
+  display: block;
+  position: absolute;
+}
+.experience .timeline .mid img:nth-child(1) {
+  top: -2px;
+  left: -16px;
+}
+.experience .timeline .mid img:nth-child(2) {
+  top: 87px;
+  right: -11px;
+}
+.experience .timeline .mid img:nth-child(3) {
+  top: 228px;
+  right: -11px;
+}
+.experience .timeline .mid img:nth-child(4) {
+  top: 373px;
+  right: -11px;
+}
+.experience .timeline .mid hr {
+  width: 46px;
+  border: 2px solid #D8D8D8;
+  background-color: #D8D8D8;
+  position: absolute;
+  top: 530px;
+  right: -22px;
+}
+.experience .timeline .infoRight {
+  position: relative;
+}
+.experience .timeline .infoRight .item:nth-child(1) {
+  position: absolute;
+  top: 89px;
+  right: -286px;
+}
+.experience .timeline .infoRight .item:nth-child(2) {
+  position: absolute;
+  top: 374px;
+  right: -286px;
+}
+
+.works ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+.works ul li {
+  margin-left: 20px;
+  text-align: center;
+  width: 284px;
+  height: 213px;
+  border-radius: 6px;
+}
+.works ul li:hover {
+  border: 2px solid #d7d7d7;
+  border-bottom: 3px solid #d7d7d7;
+}
+.works ul li .workPicture {
+  height: 150px;
+  padding-top: 20px;
+  border-radius: 6px;
+}
+.works ul li .one {
+  background-color: #fdb4e3;
+  padding-top: 35px;
+  padding-left: 75px;
+}
+.works ul li .two {
+  background-color: #424242;
+  padding-top: 35px;
+}
+.works ul li .three {
+  background-color: #8ad7fa;
+  padding-top: 35px;
+}
+.works ul li .info {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.works ul li .info h4 {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.works ul li .info p {
+  color: #8d8d8d;
+}
+
+.about {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.about .aboutInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .aboutInfo img {
+  margin-right: 50px;
+}
+.about .aboutInfo p {
+  width: 442px;
+  text-align: justify;
+}
